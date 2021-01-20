@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Tajawal:400,500,700,800&display=swap&subset=arabic");
+@font-face {
+  font-family: "hexa";
+  src: url("../../fonts/Nexa Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Frut";
+  src: url("../../fonts/FrutigerLTArabic-65Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "hexa";
+  padding: 0px;
+  overflow-x: hidden;
+  /* font-size: 16px; */
+}
+
+header {
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
