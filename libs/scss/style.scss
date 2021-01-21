@@ -25,6 +25,13 @@ body {
 
 
 // header
+
 header{
   padding: 20px 0;
+  .logo{
+    text-align: left;
+    img{
+      width: auto;
+    }
+  }
 }

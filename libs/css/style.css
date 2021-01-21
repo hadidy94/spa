@@ -21,5 +21,11 @@ body {
 header {
   padding: 20px 0;
 }
+header .logo {
+  text-align: left;
+}
+header .logo img {
+  width: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
