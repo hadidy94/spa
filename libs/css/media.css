@@ -15,9 +15,27 @@
 }
 
 @media (max-width: 900px) {
-   
-
-
+   header .row{
+       flex-direction: column-reverse;
+   }
+   header .logo{
+       text-align: center;
+   }
+   header .navbar-toggler{
+    width: 100%;
+    background: #eee;
+    padding: 10px;
+   }
+   header .navbar-toggler:focus{
+    background: #080909;
+    color: #fff;
+   }
+   header .navbarContainer .login-menu{
+       flex-direction: row;
+       padding: 5px;
+       align-items: center;
+       justify-content: center;
+   }
 }
 
 @media (max-width: 400px) {}
