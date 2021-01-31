@@ -45,7 +45,7 @@ header .navbarContainer .mainMenu .nav-link {
   padding: 5px 20px;
 }
 header .logo {
-  text-align: left;
+  text-align: right;
 }
 header .logo img {
   width: auto;
@@ -80,7 +80,7 @@ header .logo img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.29);
 }
 .banner .bannerWhite .bannerContainer h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -101,6 +101,91 @@ header .logo img {
 .banner .bannerWhite .bannerContainer a:hover {
   background: #ebe7e6;
   color: #080909;
+}
+
+.banner_inner {
+  height: 200px;
+  background: url("../../images/back.png") no-repeat center;
+  background-size: cover;
+}
+
+.main_content {
+  margin-top: -90px;
+}
+.main_content .login_tabs,
+.main_content .main_content_inner {
+  background: #fff;
+  padding: 40px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.29);
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+.main_content .login_tabs .title_inner,
+.main_content .main_content_inner .title_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_content .login_tabs .title_inner h3,
+.main_content .main_content_inner .title_inner h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main_content .login_tabs .title_inner a,
+.main_content .main_content_inner .title_inner a {
+  display: block;
+  cursor: pointer;
+  background: #080909;
+  color: #fff;
+  margin: 15px 0;
+  box-shadow: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.main_content .login_tabs .title_inner a:hover,
+.main_content .main_content_inner .title_inner a:hover {
+  background: #eee;
+  color: #080909;
+}
+.main_content .login_tabs .login_form .form-control,
+.main_content .main_content_inner .login_form .form-control {
+  height: 50px;
+  margin-bottom: 10px;
+  width: 49%;
+  display: inline-block;
+}
+.main_content .login_tabs .login_form .forget_pass,
+.main_content .main_content_inner .login_form .forget_pass {
+  color: #080909;
+  display: block;
+}
+.main_content .login_tabs .login_form button,
+.main_content .main_content_inner .login_form button {
+  display: inline-block;
+  cursor: pointer;
+  background: #080909;
+  color: #fff;
+  margin: 15px 0;
+  box-shadow: none;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.main_content .login_tabs .login_form button:hover,
+.main_content .main_content_inner .login_form button:hover {
+  background: #eee;
+  color: #080909;
+}
+.main_content .nav-pills .nav-link {
+  color: #080909;
+}
+.main_content .nav-pills .nav-link.active, .main_content .nav-pills .show > .nav-link {
+  background: transparent;
+  color: #080909;
+  border-top: 3px solid #707070;
+  border-radius: 0;
 }
 
 .services {
@@ -153,17 +238,19 @@ header .logo img {
 }
 .services .servicesItem .servicescapt h2 {
   margin-bottom: 20px;
+  font-size: 23px;
+  font-weight: bold;
 }
 .services .servicesItem .servicescapt a {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 .services .servicesItem:hover .serHover {
   opacity: 1;
 }
 
 footer {
-  background: #E6E2E0;
+  background: #e6e2e0;
   padding: 50px 0 70px;
 }
 footer .pay {
@@ -199,14 +286,14 @@ footer .socail ul li {
   margin-left: 10px;
 }
 footer .socail ul li a {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: block;
   border-radius: 50%;
   background: #080909;
   color: #fff;
   text-align: center;
-  line-height: 55px;
+  line-height: 40px;
   transition: 0.3s;
 }
 footer .socail ul li a:hover {
@@ -220,11 +307,13 @@ footer .footerIter {
 }
 footer .footerIter i {
   margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 35px;
   color: #111212;
 }
 footer .footerIter h3 {
   margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
 footer .footerIter p {
   margin-bottom: 0;

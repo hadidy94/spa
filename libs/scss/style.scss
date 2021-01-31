@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Cairo:400,500,700,800&display=swap&subset=arabic");
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,500,700,800&display=swap&subset=arabic');
 $primary-color: #ffa600;
 $second-color: #4a1909;
 
 @font-face {
-  font-family: "hexa";
-  src: url("../../fonts/Nexa\ Light.otf") format("truetype");
+  font-family: 'hexa';
+  src: url('../../fonts/Nexa\ Light.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Frut";
-  src: url("../../fonts/ElMessiri-Regular.ttf") format("truetype");
+  font-family: 'Frut';
+  src: url('../../fonts/ElMessiri-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -57,7 +57,7 @@ header {
 
   // logoSection
   .logo {
-    text-align: left;
+    text-align: right;
     img {
       width: auto;
     }
@@ -69,7 +69,7 @@ header {
 .banner {
   position: relative;
   height: 550px;
-  background: url("../../images/back.png") no-repeat center;
+  background: url('../../images/back.png') no-repeat center;
   background-size: cover;
   .container {
     height: 100%;
@@ -90,17 +90,17 @@ header {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      box-shadow: 0 0 10px rgba(0,0,0,0.29);
-      h1{
-        font-size: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.29);
+      h1 {
+        font-size: 35px;
         font-weight: bold;
         margin-bottom: 15px;
       }
-      p{
+      p {
         margin-bottom: 15px;
         font-size: 15px;
       }
-      a{
+      a {
         display: block;
         min-width: 150px;
         color: #fff;
@@ -109,7 +109,7 @@ header {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        &:hover{
+        &:hover {
           background: #ebe7e6;
           color: #080909;
         }
@@ -118,37 +118,119 @@ header {
   }
 }
 
+.banner_inner {
+  height: 200px;
+
+  background: url('../../images/back.png') no-repeat center;
+  background-size: cover;
+}
+
+// main_content
+
+.main_content {
+  margin-top: -90px;
+  .login_tabs,
+  .main_content_inner {
+    background: #fff;
+    padding: 40px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.29);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    .title_inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3{
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      a{
+        display: block;
+        cursor: pointer;
+        background: #080909;
+        color: #fff;
+        margin: 15px 0;
+        box-shadow: none;
+        padding: 5px 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        &:hover{
+          background: #eee;
+          color: #080909;
+        }
+      }
+    }
+   
+    .login_form{
+      .form-control{
+        height: 50px;
+        margin-bottom: 10px;
+        width: 49%;
+        display: inline-block;
+      }
+      .forget_pass{
+        color: #080909;
+        display: block;
+      }
+      button{
+        display: inline-block;
+        cursor: pointer;
+        background: #080909;
+        color: #fff;
+        margin: 15px 0;
+        box-shadow: none;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s;
+        &:hover{
+          background: #eee;
+          color: #080909;
+        }
+      }
+    }
+  }
+  .nav-pills .nav-link{
+    color: #080909;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: transparent;
+    color: #080909;
+    border-top: 3px solid #707070;
+    border-radius: 0;
+  }
+}
 
 // services
-.services{
+.services {
   margin-top: 80px;
   padding: 60px 0;
-  .title{
+  .title {
     margin-bottom: 40px;
   }
-  .servicesItem{
+  .servicesItem {
     background: #fff;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.16);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
     transition: 0.3s;
     margin-bottom: 50px;
-    .servicesImg{
+    .servicesImg {
       position: relative;
-      img{
+      img {
         max-width: 100%;
       }
-      .serHover{
+      .serHover {
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(230,226,224,0.5);
+        background: rgba(230, 226, 224, 0.5);
         display: flex;
         align-items: center;
         justify-content: center;
         opacity: 0;
         transition: 0.5s;
-        a{
+        a {
           display: block;
           background: #fff;
           color: #111212;
@@ -156,95 +238,98 @@ header {
           font-size: 17px;
           border-radius: 10px;
           transition: 0.4s;
-          &:hover{
+          &:hover {
             background: #080909;
-          color: #fff;
+            color: #fff;
           }
         }
       }
     }
-    .servicescapt{
+    .servicescapt {
       padding: 30px 10px;
-      h2{
+      h2 {
         margin-bottom: 20px;
-      }
-      a{
+        font-size: 23px;
         font-weight: bold;
-        font-size: 18px;
+      }
+      a {
+        font-weight: bold;
+        font-size: 16px;
       }
     }
-    &:hover .serHover{
+    &:hover .serHover {
       opacity: 1;
     }
   }
 }
 
 // footer
-footer{
-  background: #E6E2E0;
+footer {
+  background: #e6e2e0;
   padding: 50px 0 70px;
-  .pay{
+  .pay {
     margin-bottom: 80px;
   }
-  .payMethod{
+  .payMethod {
     text-align: center;
     margin-bottom: 30px;
-    ul{
+    ul {
       flex-direction: row;
-      li{
+      li {
         display: inline-block;
         margin-left: 10px;
-        img{
+        img {
           width: 70px;
         }
       }
     }
   }
-  .footerLogo{
+  .footerLogo {
     text-align: center;
     margin-bottom: 30px;
   }
 
-  .socail{
+  .socail {
     text-align: center;
     margin-bottom: 30px;
-    ul{
+    ul {
       flex-direction: row;
-      li{
+      li {
         display: inline-block;
         margin-left: 10px;
-        a{
-          width: 50px;
-          height: 50px;
+        a {
+          width: 40px;
+          height: 40px;
           display: block;
           border-radius: 50%;
           background: #080909;
           color: #fff;
           text-align: center;
-          line-height: 55px;
+          line-height: 40px;
           transition: 0.3s;
-          &:hover{
+          &:hover {
             background: #fafafa;
-            color:#080909;
+            color: #080909;
           }
         }
-        
       }
     }
   }
-  .footerIter{
+  .footerIter {
     text-align: center;
     color: #111212;
     margin-bottom: 30px;
-    i{
+    i {
       margin-bottom: 10px;
-      font-size: 40px;
+      font-size: 35px;
       color: #111212;
     }
-    h3{
+    h3 {
       margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 20px;
     }
-    p{
+    p {
       margin-bottom: 0;
     }
   }
