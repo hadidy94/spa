@@ -114,12 +114,12 @@
 	============================================= -->
     <div class="banner_inner">
         <div class="container">
-           
+
         </div>
     </div>
 
 
-<!-- main_content
+    <!-- main_content
     ============================================= -->
 
     <div class="main_content">
@@ -129,18 +129,21 @@
                     <h3>Account settings</h3>
                     <a href="#">Book now </a>
                 </div>
-                
+
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">My Account </a>
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#account" role="tab"
+                            aria-controls="account" aria-selected="true">My Account </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#reserve" role="tab" aria-controls="reserve" aria-selected="false">My reservations </a>
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#reserve" role="tab"
+                            aria-controls="reserve" aria-selected="false">My reservations </a>
                     </li>
-                    
-                  </ul>
-                  <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="pills-account-tab">
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="account" role="tabpanel"
+                        aria-labelledby="pills-account-tab">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="login_form">
@@ -150,38 +153,156 @@
                                         <input type="email" placeholder="Email" class="form-control">
                                         <input type="text" placeholder="Age" class="form-control">
                                         <input type="text" placeholder="Phone Number" class="form-control">
-                                        <input type="password" placeholder="Password" class="form-control">
-                                        <input type="password" placeholder="Confirm Password" class="form-control"><br>
-                                        <input type="checkbox"> Allow to receive offers
                                         <br>
-                                        <button type="submit">Create an account </button>
+                                        <button type="submit">Save Changes</button>
                                     </form>
-                                   
+
+                                    <div class="changePassModel">
+
+                                        <button type="button" class="btn btn-primary changePassButton"
+                                            data-toggle="modal" data-target="#changePass">
+                                            Change Password
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="changePass" tabindex="-1" role="dialog"
+                                            aria-labelledby="changePassLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <label>New Password</label>
+                                                            <input type="password" placeholder="Password"
+                                                                class="form-control">
+                                                            <label> Confirm New Password</label>
+                                                            <input type="password" placeholder="Confirm Password"
+                                                                class="form-control"><br>
+                                                            <button type="submit">Save</button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="reserve" role="tabpanel" aria-labelledby="pills-reserve-tab">
                         <div class="row">
-                            <div class="col-md-8">
-                                <div class="login_form">
-                                    <form>
-                                        <input type="text" placeholder="First Name" class="form-control">
-                                        <input type="text" placeholder="last Name" class="form-control">
-                                        <input type="email" placeholder="Email" class="form-control">
-                                        <input type="text" placeholder="Age" class="form-control">
-                                        <input type="text" placeholder="Phone Number" class="form-control">
-                                        <input type="password" placeholder="Password" class="form-control">
-                                        <input type="password" placeholder="Confirm Password" class="form-control"><br>
-                                        <input type="checkbox"> Allow to receive offers
-                                        <br>
-                                        <button type="submit">Create an account </button>
-                                    </form>
+                            <div class="col-md-4">
+                                <div class="book_box">
+                                    <ul class="lsit-unstyled">
+                                        <li>
+                                            Reservation number
+                                            <span>12354</span>
+                                        </li>
+                                        <li>
+                                            Service
+                                            <span>Eyebrows Retouch</span>
+                                        </li>
+                                        <li>
+                                            Date
+                                            <span>12/12/2020</span>
+                                        </li>
+                                        <li>
+                                            Time
+                                            <span>2:30 PM</span>
+                                        </li>
+                                        <li>
+                                            Reservation Status
+                                            <span>In prograss </span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="editing_box">
+                                        <button type="button" class="btn btn-primary hass editButton"
+                                            data-toggle="modal" data-target="#editBooking">
+                                            <i class="fa fa-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary hass deleteButton"
+                                            data-toggle="modal" data-target="#deleteBooking">
+                                            <i class="fa fa-trash-o"></i>
+                                        </button>
+
+                                        <!-- edit -->
+                                        <div class="modal fade editModel" id="editBooking" tabindex="-1" role="dialog"
+                                            aria-labelledby="editBookingLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <label>New Password</label>
+                                                            <input type="date" placeholder="date" class="form-control">
+
+                                                            <h5>Availabe Times</h5>
+                                                            <label>Afternoon</label>
+
+                                                            <div class="chechboxgroup">
+                                                                <div class="checkboxinner">
+                                                                    <input id="switch-1" type="checkbox"
+                                                                        class="check-input" />
+                                                                    <label for="switch-1"
+                                                                        class="check-label">02:30 PM</label>
+                                                                </div>
+
+                                                                <div class="checkboxinner">
+                                                                    <input id="switch-2" type="checkbox"
+                                                                        class="check-input" />
+                                                                    <label for="switch-2"
+                                                                        class="check-label">01:30 PM</label>
+                                                                </div>
+
+
+
+
+                                                                <div class="checkboxinner">
+                                                                    <input id="switch-3" type="checkbox"
+                                                                        class="check-input" />
+                                                                    <label for="switch-3"
+                                                                        class="check-label">12:30 PM</label>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <button type="submit">Save</button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- delete -->
+                                        <div class="modal fade deletModel" id="deleteBooking" tabindex="-1"
+                                            role="dialog" aria-labelledby="editBookingLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <h4>Do you want to delete the appointment?</h4>
+                                                        <div class="btn-group text-center" role="group"
+                                                            aria-label="Basic example">
+                                                            <button type="button" class="btn btn-secondary">yes</button>
+                                                            <button type="button" class="btn btn-secondary">No</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -215,7 +336,7 @@
                             <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-                           
+
                         </ul>
                     </div>
                 </div>
@@ -224,34 +345,33 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footerIter">
                         <i class="fa fa-map-marker fa-lg"></i>
-                            <h3>الموقع </h3>
-                            <p>الرياض ، حي االملقا</p>
-                        
+                        <h3>الموقع </h3>
+                        <p>الرياض ، حي االملقا</p>
+
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footerIter">
                         <i class="fa fa-clock-o fa-lg"></i>
-                            <h3>ساعات العمل  </h3>
-                            <p>من الاثنين الى السبت من الساعة 3:00 الى 9:00</p>
-                            <p>ماعدا يوم الاحد مقفل </p>
-                        
+                        <h3>ساعات العمل </h3>
+                        <p>من الاثنين الى السبت من الساعة 3:00 الى 9:00</p>
+                        <p>ماعدا يوم الاحد مقفل </p>
+
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footerIter">
                         <i class="fa fa-phone fa-lg"></i>
-                            <h3>رقم الهاتف  </h3>
-                            <p>0555627363</p>
-                        
+                        <h3>رقم الهاتف </h3>
+                        <p>0555627363</p>
+
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footerIter">
                         <i class="fa fa-envelope fa-lg"></i>
-                            <h3>البريد الالكتروني  </h3>
-                            <p> lina@maisondebeautebylinaaleid.</p>
-                        
+                        <h3>البريد الالكتروني </h3>
+                        <p> lina@maisondebeautebylinaaleid.</p>
                     </div>
                 </div>
             </div>

@@ -148,6 +148,10 @@ header .logo img {
   background: #eee;
   color: #080909;
 }
+.main_content .login_tabs .login_form,
+.main_content .main_content_inner .login_form {
+  position: relative;
+}
 .main_content .login_tabs .login_form .form-control,
 .main_content .main_content_inner .login_form .form-control {
   height: 50px;
@@ -178,6 +182,99 @@ header .logo img {
   background: #eee;
   color: #080909;
 }
+.main_content .login_tabs .login_form .changePassModel .changePassButton,
+.main_content .main_content_inner .login_form .changePassModel .changePassButton {
+  position: absolute;
+  right: 0;
+  top: -74px;
+  background: transparent;
+  color: #000;
+  text-decoration: underline;
+}
+.main_content .login_tabs .login_form .changePassModel .form-control,
+.main_content .main_content_inner .login_form .changePassModel .form-control {
+  height: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: inline-block;
+  background: #f5f5f5;
+}
+.main_content .login_tabs .login_form .changePassModel label,
+.main_content .main_content_inner .login_form .changePassModel label {
+  font-size: 14px;
+}
+.main_content .login_tabs .book_box,
+.main_content .main_content_inner .book_box {
+  background: #E6E2E0;
+  padding: 20px;
+  border-left: 4px solid #3C3D3D;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding-top: 45px;
+  position: relative;
+}
+.main_content .login_tabs .book_box li,
+.main_content .main_content_inner .book_box li {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.main_content .login_tabs .book_box li span,
+.main_content .main_content_inner .book_box li span {
+  float: right;
+  font-weight: 400;
+}
+.main_content .login_tabs .book_box .editing_box,
+.main_content .main_content_inner .book_box .editing_box {
+  position: absolute;
+  top: 6px;
+  right: 11px;
+}
+.main_content .login_tabs .book_box .editing_box .hass,
+.main_content .main_content_inner .book_box .editing_box .hass {
+  background: #080909;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  outline: none;
+}
+.main_content .login_tabs .book_box .editing_box .hass:hover,
+.main_content .main_content_inner .book_box .editing_box .hass:hover {
+  background: #eee;
+  color: #080909;
+}
+.main_content .login_tabs .book_box .deletModel h4,
+.main_content .main_content_inner .book_box .deletModel h4 {
+  margin-bottom: 20px;
+}
+.main_content .login_tabs .book_box .deletModel .btn-group,
+.main_content .main_content_inner .book_box .deletModel .btn-group {
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.main_content .login_tabs .book_box .deletModel .btn-group button,
+.main_content .main_content_inner .book_box .deletModel .btn-group button {
+  border-radius: 0;
+  padding: 5px 15px;
+}
+.main_content .login_tabs .book_box .deletModel .btn-group button:first-child,
+.main_content .main_content_inner .book_box .deletModel .btn-group button:first-child {
+  margin: 0 5px;
+  background: #eee;
+  color: #000;
+  border: none;
+}
+.main_content .login_tabs .book_box .deletModel .btn-group button:last-child,
+.main_content .main_content_inner .book_box .deletModel .btn-group button:last-child {
+  margin: 0 5px;
+  background: #080909;
+  color: #fff;
+  border: none;
+}
 .main_content .nav-pills .nav-link {
   color: #080909;
 }
@@ -186,6 +283,53 @@ header .logo img {
   color: #080909;
   border-top: 3px solid #707070;
   border-radius: 0;
+}
+
+.chechboxgroup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chechboxgroup .checkboxinner {
+  position: relative;
+  margin: 0 5px;
+}
+.chechboxgroup .checkboxinner .check-input {
+  display: none;
+}
+.chechboxgroup .checkboxinner .check-label {
+  background: #080909;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+.chechboxgroup .checkboxinner .check-input:checked + .check-label {
+  background-color: #eee;
+  border: 1px solid #080909;
+  color: #080909;
+}
+
+.editModel h5 {
+  margin: 20px 0;
+}
+.editModel label {
+  font-weight: bold;
+}
+.editModel button {
+  display: block;
+  cursor: pointer;
+  background: #080909;
+  color: #fff;
+  margin: 15px 0;
+  box-shadow: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .services {
