@@ -286,6 +286,16 @@ header .logo img {
   border-top: 3px solid #707070;
   border-radius: 0;
 }
+.main_content .single_ser {
+  background: #fff;
+  padding: 40px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.29);
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+.main_content .single_ser h2 {
+  margin-bottom: 15px;
+}
 .main_content .book_con {
   background: #fff;
   padding: 40px 20px;
