@@ -1,3 +1,19 @@
 header .logo {
     text-align: left;
 }
+.main_content .login_tabs .login_form .changePassModel .changePassButton, .main_content .main_content_inner .login_form .changePassModel .changePassButton{
+    right: auto;
+    left: 0;
+}
+.main_content .login_tabs .book_box .editing_box, .main_content .main_content_inner .book_box .editing_box{
+    right: auto;
+    left:11px;
+}
+.main_content .login_tabs .book_box li span, .main_content .main_content_inner .book_box li span
+{
+    float: left;
+}
+.main_content .book_con .service_box input{
+    left: 15px;
+    right: auto;
+}

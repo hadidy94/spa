@@ -110,6 +110,7 @@ header .logo img {
 }
 
 .main_content {
+  padding: 40px 0;
   margin-top: -90px;
 }
 .main_content .login_tabs,
@@ -205,9 +206,9 @@ header .logo img {
 }
 .main_content .login_tabs .book_box,
 .main_content .main_content_inner .book_box {
-  background: #E6E2E0;
+  background: #e6e2e0;
   padding: 20px;
-  border-left: 4px solid #3C3D3D;
+  border-left: 4px solid #3c3d3d;
   border-radius: 8px;
   margin-bottom: 20px;
   padding-top: 45px;
@@ -278,18 +279,125 @@ header .logo img {
 .main_content .nav-pills .nav-link {
   color: #080909;
 }
-.main_content .nav-pills .nav-link.active, .main_content .nav-pills .show > .nav-link {
+.main_content .nav-pills .nav-link.active,
+.main_content .nav-pills .show > .nav-link {
   background: transparent;
   color: #080909;
   border-top: 3px solid #707070;
   border-radius: 0;
+}
+.main_content .book_con {
+  background: #fff;
+  padding: 40px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.29);
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+.main_content .book_con .book_route {
+  margin-bottom: 30px;
+}
+.main_content .book_con .book_route ul {
+  margin-bottom: 20px;
+}
+.main_content .book_con .book_route ul li {
+  margin-bottom: 10px;
+}
+.main_content .book_con .book_route ul li a {
+  color: #b8b8ad;
+}
+.main_content .book_con .book_route ul li.active a {
+  color: #3199e8;
+}
+.main_content .book_con .book_route button {
+  display: block;
+  min-width: 150px;
+  color: #fff;
+  background: #080909;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+.main_content .book_con .book_route button:hover {
+  background: #ebe7e6;
+  color: #080909;
+}
+.main_content .book_con .book_route .ser_come_last {
+  background: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.main_content .book_con .book_route .ser_come_last h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.main_content .book_con .book_route .ser_come_last span {
+  font-size: 14px;
+}
+.main_content .book_con .book_services h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.main_content .book_con .service_box {
+  position: relative;
+  margin-bottom: 20px;
+}
+.main_content .book_con .service_box input[type=checkbox] {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5);
+  /* IE */
+  -moz-transform: scale(1.5);
+  /* FF */
+  -webkit-transform: scale(1.5);
+  /* Safari and Chrome */
+  -o-transform: scale(1.5);
+  /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+}
+.main_content .book_con .service_box label {
+  width: 100%;
+  border: 1px solid #111212;
+  padding: 10px 30px;
+}
+.main_content .book_con .service_box label h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.main_content .book_con .service_box label .price_time {
+  margin-bottom: 15px;
+}
+.main_content .book_con .service_box label .employe-date {
+  margin-bottom: 20px;
+}
+.main_content .book_con .service_box label .employe-date .form-control {
+  max-width: 250px;
+}
+.main_content .book_con .service_box .ser-input:checked + .ser-label {
+  border: 3px solid #080909 !important;
 }
 
 .chechboxgroup {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.chechboxgroup h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 100%;
 }
 .chechboxgroup .checkboxinner {
   position: relative;
@@ -309,6 +417,11 @@ header .logo img {
   cursor: pointer;
 }
 .chechboxgroup .checkboxinner .check-input:checked + .check-label {
+  background-color: #eee;
+  border: 1px solid #080909;
+  color: #080909;
+}
+.chechboxgroup .checkboxinner.disabled .check-label {
   background-color: #eee;
   border: 1px solid #080909;
   color: #080909;
